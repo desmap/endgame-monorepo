@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "outDir": "../dist/p2"
+  },
+  "include": ["**/*.ts"],
+  "references": [{ "path": "../p1" }]
+}

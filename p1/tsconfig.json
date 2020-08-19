@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "composite": true,
+    "declaration": true,
+    "outDir": "../dist/p1"
+  },
+  "include": ["**/*.ts"]
+}
