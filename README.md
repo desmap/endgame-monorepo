@@ -27,4 +27,4 @@ re 3: Next can be hacked to import paths out of its scope, eg. with `next-transp
 Further notes:
 
 - The `.babelrc` is for getting full decorator support with Next: https://github.com/vercel/next.js/issues/4707 but is not required for the requirements
-- I chose to have all builds (`dist`) in the top dir and not in each repo; it just makes the handing easier; be aware that every repo needs its dedicated script in the one `package.json`
+- I chose to have all builds (`dist`) in the top dir and not in each repo; it just makes the handling easier; be aware that every repo needs its dedicated script in the one `package.json`
