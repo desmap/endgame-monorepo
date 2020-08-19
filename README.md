@@ -1,6 +1,6 @@
 # Endgame Monorepo
 
-These are notes for myself and a basic monorepo template structure because it isn't trivial to setup a proper monorepo in 2020. Too many options, too many struggles.
+These are notes for myself and a basic monorepo template structure because it isn't trivial to setup a proper monorepo in 2020—too many options, too many struggles.
 
 IDK if this is the real endgame in monorepos—this was just a random name I mkdir'ed—but I just wanted a simple solution when using TS, React and Next with as few as possible dependencies, e.g. no yarn (couldn't decide on the version number), no pnpm (adoption risk but it's excellent), no lerna b/c sophisticated publishing of the monorepo isn't my top prio for now.
 
