@@ -1,8 +1,8 @@
 # Endgame Monorepo
 
-These are notes for myself and a basic monorepo template structure because it isn't trivial to setup a proper monorepo in 2020.
+These are notes for myself and a basic monorepo template structure because it isn't trivial to setup a proper monorepo in 2020. Too many options, too many struggles.
 
-IDK if this is the real endgame in monorepos—this was just a random name I `mkdir`'ed—but I just wanted a simple solution when using TS, React and Next with as few as possible dependencies, e.g. no yarn (couldn't decide on the version number), no pnpm (adoption risk but it's excellent), no lerna b/c sophisticated publishing of the monorepo isn't my top prio for now.
+IDK if this is the real endgame in monorepos—this was just a random name I mkdir'ed—but I just wanted a simple solution when using TS, React and Next with as few as possible dependencies, e.g. no yarn (couldn't decide on the version number), no pnpm (adoption risk but it's excellent), no lerna b/c sophisticated publishing of the monorepo isn't my top prio for now.
 
 My requirements:
 
@@ -12,7 +12,7 @@ My requirements:
 
 The implementation:
 
-1. **Monorepo with TypeScript Project References**; while this feature isn't easy to grok it's the most simple way to setup a proper monorepo with incremental builds
+1. **Monorepo with TypeScript's Project References**; while this feature isn't easy to grok it's the most simple way to setup a proper monorepo with incremental builds
 2. **Conditional imports** will be handled only on the client side and only in the compile target with `webpack.NormalModuleReplacementPlugin` within Next.js
 3. **Interoperability with Next**; TypeScript references (actually the "repos" in the monorepo) have to be declared in Next's `tsconfig.json` as `paths`, this works but be aware that Next does not rebuild on change of the imported module, example:
 
