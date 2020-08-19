@@ -30,3 +30,4 @@ Further notes:
 
 - The `.babelrc` is for getting full decorator support with Next: https://github.com/vercel/next.js/issues/4707 but is not required for the requirements
 - I chose to have all builds (`dist`) in the top dir and not in each repo; it just makes the handling easier; be aware that every repo needs its dedicated script in the one `package.json`
+- This is all CommonJS; I tried an ES6 version but it's almost impossible since the ecosystem is not ready; I needed rollup with rollup's ts2 plugin and rollup alias to get close to what I wanted but it's not nice because of huge compile times and quite a buggy expoerience (re top-level awaits, named imports, etc., it's just not working)
