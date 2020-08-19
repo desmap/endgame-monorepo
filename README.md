@@ -1,6 +1,6 @@
 # Endgame Monorepo
 
-These are notes for myself and a basic monorepo template structure because t isn't trivial to setup a proper monorepo in 2020. IDK if this is the real endgame in monorepos—everyone has different requirements—but I just wanted a solution when using all major libs (TS, React, Next), one as simple as possble and with as few as possible dependencies, e.g. no yarn (future unknown), no pnpm (adoption risk but it's excellent), no lerna b/c sophisticated publishing of the monorepo isn't my top prio for now.
+These are notes for myself and a basic monorepo template structure because t isn't trivial to setup a proper monorepo in 2020. IDK if this is the real endgame in monorepos—everyone has different requirements—but I just wanted a solution when using TS, React and Next, one as simple as possble with as few as possible dependencies, e.g. no yarn (future unknown), no pnpm (adoption risk but it's excellent), no lerna b/c sophisticated publishing of the monorepo isn't my top prio for now.
 
 My requirements are:
 
