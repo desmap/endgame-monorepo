@@ -23,6 +23,7 @@ The implementation:
   }
 
 ```
+**UPDATE: Above is not requried anymore, Next can read from files above cwd, you just need to set `baselUrl: '..'` in Next's tsconfig.**
 
 re 3: Next can be hacked to import paths out of its scope, eg. with `next-transpile-modules` or with other hacks described in https://github.com/vercel/next.js/issues/5666; I couldn't get any to work and transpile the decorators in the shared `p1`. Also I don't know if this will rebuild on change and if those hacks break on upgrading Next, eventually. Thus, I sticked to my `tsconfig` `paths` which is simple and fool-proof. I need live rebuilds more on the server side than on the client side. When working on latter the share files such as models are set.
 
